@@ -250,7 +250,7 @@ def render_audit_log(df_trades):
             'Signal_Strength': '{:.2f}',
             'Entry_VIX': '{:.1f}',
             'Entry_Breadth': '{:.1f}%'
-        }).applymap(lambda x: 'color: #00CC96' if x == 'Aperta' else ('color: #EF553B' if x == 'SL' else ('color: #636EFA' if x == 'Signal' else 'color: gray')), subset=['Stato', 'Motivo_Chiusura']),
+        }).map(lambda x: 'color: #00CC96' if x == 'Aperta' else ('color: #EF553B' if x == 'SL' else ('color: #636EFA' if x == 'Signal' else 'color: gray')), subset=['Stato', 'Motivo_Chiusura']),
         use_container_width=True
     )
 
