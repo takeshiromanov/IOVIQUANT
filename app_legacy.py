@@ -365,7 +365,7 @@ if st.session_state.get('run_done', False):
             
             # 1A: Prezzo e Medie Mobili (Row 1)
             fig_dd_top.add_trace(go.Scatter(x=df_single.index, y=ticker_prices, name='Prezzo', line=dict(color='gray', width=1.5)), row=1, col=1, secondary_y=False)
-            fig_dd_top.add_trace(go.Scatter(x=df_single.index, y=df_single['EMA5'], name='EMA 5', line=dict(color=#028450, width=1)), row=1, col=1, secondary_y=False)
+            fig_dd_top.add_trace(go.Scatter(x=df_single.index, y=df_single['EMA5'], name='EMA 5', line=dict(color='#028450', width=1)), row=1, col=1, secondary_y=False)
             fig_dd_top.add_trace(go.Scatter(x=df_single.index, y=df_single['EMA21'], name='EMA 21', line=dict(color='orange', width=1.2)), row=1, col=1, secondary_y=False)
             fig_dd_top.add_trace(go.Scatter(x=df_single.index, y=df_single['EMA63'], name='EMA 63', line=dict(color='red', width=1.5)), row=1, col=1, secondary_y=False)
             
